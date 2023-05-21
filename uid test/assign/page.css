@@ -1,0 +1,243 @@
+*{
+    box-sizing:border-box;
+    font-family: 'segoe UI'
+}
+
+body{
+    margin:0;
+}
+.main-container{
+    position: relative;
+    height:100vh;
+    width:100%;
+    background:transparent;
+    padding-top: 5%;
+    overflow-y: auto;
+/*
+    background-image: url("bgg.jpg");
+    background-size: cover;
+    background-position: center;
+*/
+    
+}
+
+
+.bg{
+    content: "";
+    position: fixed;
+    background-image: url("team4.png");
+    background-size: cover;
+    background-position: center;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    filter: blur(15px);
+    z-index: -1;
+    overflow-y:auto;
+    background-attachment: fixed;
+}
+/*
+.sub-container {
+    height: 100%;
+    width: 25%;
+    background: #fff;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+*/
+.login-form{
+    position: relative;
+    height: 611px;/*  added  */
+    width: 359px;/*   added   */
+    background: #fff;
+    margin: auto;
+    border-radius: 20px;
+    top: 40%;
+    transform: translateY(-48%);      /*  changed to -48%      */ 
+    transition: 0.5s all;   
+    z-index: 2;
+    margin-top: 5%;
+}
+
+/* created class for transition */
+.extra-height{
+   /* min-height: 97vh;  */
+   /* min-height: 717px;   */
+   height: 689px;
+   /* transition: 0.5s all;  */
+}
+
+
+h2 {
+    color: #000033;
+    width: 100%;
+    padding: 1em;
+    padding-top: 0.5em;/*   added   */
+    padding-bottom: 0.5em;/*   added   */
+    margin-bottom: 0;
+}
+
+ p {
+    width: 100%;
+    padding:.5px 1.5em;
+    margin-top: 0;
+    text-align: left;
+}
+
+h4{
+    color: #000033;
+    width: 100%;
+    padding:.5px 1.5em;
+}
+
+.icon{
+    padding-left: 1em;
+    margin-top: 1em;
+    cursor:pointer;
+}
+
+.icon img {
+    margin: 0 0.5em;
+    height: 30px;
+    width: 30px;
+    cursor:pointer;
+}
+h4{
+    color: #000033;
+    width: 100%;
+    padding:.5px 1.5em;
+    margin:0;
+}
+.input-field{
+    text-align: center;
+    
+}
+.input-field h4{
+    text-align: left;
+    margin-top: 0;
+}
+input {
+    width: 87%;
+/*    padding: 5.5%;*/
+    height: 40px;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-right:grey;
+}
+.go-icon img{
+    height:40px;
+    width:40px;
+    position: absolute;
+    bottom: 55px; 
+    right: 20px;;
+    cursor: pointer;
+/*    transform: translateX(-50%);    */
+}
+
+.go-icon h3{
+    color: #000033;
+/*    width: 100%;*/
+    padding:.5px 1.5em;
+    position: absolute;
+    margin:0;
+
+    bottom: 65px; /* included this*/ 
+}
+
+
+.alr-usr p{
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    cursor:pointer;
+}
+
+/*    used smaller font-size in class error below   */
+.error{
+    font-size: 0.9rem;
+    padding-left: 25px;
+    padding-top: 6px;
+    /* transition: 1s all; */
+}
+
+.erroru{
+    font-size: 0.9rem;
+    /* transition: 1s all; */
+
+}
+
+
+.erroru p{
+    color:indianred;
+    padding-left: 0px;
+    margin:5px -1px;
+    margin-bottom: 0;
+    transition: 1s all;
+}
+
+.error li{
+    color: indianred;
+    margin: 5px 0;
+    transition: 1s all;
+}
+
+ul{
+    color:indianred;
+    padding-left: 20px;
+    margin: 0;  /*    included margin:0    */
+    /* transition: 1s all; */
+}
+
+
+ol{
+    color:indianred;
+    padding-left: 20px;
+    margin: 0;  /*    included margin:0    */
+    /* transition: 1s all; */
+}
+
+
+
+.error-style{
+    /* border:1px solid indianred; */
+}
+
+
+
+
+
+@media (max-width: 480px) {
+.login-form{
+    height: 690px;
+    width: 300px;
+    margin-top: 35%;
+}
+}
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+.login-form{
+    height: 690px;
+    width: 380px;
+    margin-top: 35%;
+}
+}
+
+
+@media (min-width: 601px) and (max-width: 1261px) {
+.login-form{
+height: 690px;
+    width: 500px;
+    margin-top: 22%;
+}
+}
+
+/*
+@media (min-width: 1262px) {
+   
+}
+*/
